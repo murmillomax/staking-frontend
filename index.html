@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Storage DApp</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Staking DApp</h1>
+
+
+<button id="connect">
+    Conectar MetaMask
+</button>
+
+
+<br><br>
+
+
+<h2>Token</h2>
+
+<button id="balance">
+    Ver balance STK
+</button>
+
+<p id="balanceValor">
+    Balance:
+</p>
+
+
+<br>
+
+
+<h2>Aprobar Staking</h2>
+
+<input
+    id="approveAmount"
+    type="number"
+    placeholder="Cantidad STK">
+
+
+<button id="approve">
+    Aprobar
+</button>
+
+
+
+<br><br>
+
+
+<h2>Stake</h2>
+
+<input
+    id="stakeAmount"
+    type="number"
+    placeholder="Cantidad STK">
+
+
+<input
+    id="stakeDays"
+    type="number"
+    placeholder="Días">
+
+
+<button id="stake">
+    Hacer Stake
+</button>
+
+
+<br><br>
+
+
+<h2>Mi Stake</h2>
+
+
+<input
+    id="stakeId"
+    type="number"
+    value="0"
+    min="0"
+    placeholder="ID del Stake">
+
+<button id="myStake">
+    Consultar Stake
+</button>
+
+
+<p id="stakeInfo">
+    Stake:
+</p>
+
+
+
+<script src="config.js"></script>
+
+<script src="js/wallet.js"></script>
+
+<script src="js/token.js"></script>
+
+<script src="js/staking.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+</html>
