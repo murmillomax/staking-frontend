@@ -4,7 +4,7 @@ let tokenContract;
 async function cargarToken() {
 
     const artifact = await fetch(
-        "abi/Token.json"
+        "./abi/Token.json"
     )
     .then(r => r.json());
 
