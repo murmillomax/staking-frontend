@@ -4,7 +4,7 @@ let tokenContract;
 async function cargarToken() {
 
     const artifact = await fetch(
-        "../abi/Token.json"
+        "abi/Token.json"
     )
     .then(r => r.json());
 
@@ -30,7 +30,7 @@ async function cargarToken() {
 async function balanceToken() {
 
     const address =
-        await signer.getAddress();
+        await window.signer.getAddress();
 
 
     const balance =
