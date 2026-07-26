@@ -4,7 +4,7 @@ let stakingContract;
 async function cargarStaking() {
 
     const artifact = await fetch(
-        "../abi/Staking.json"
+        "./abi/Staking.json"
     )
     .then(r => r.json());
 
